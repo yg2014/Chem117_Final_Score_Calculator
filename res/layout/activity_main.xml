@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="Grade Calculator"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Title"
+        android:layout_below="@+id/Title"
+        android:text="Please enter your grades" />
+
+    <TextView
+        android:id="@+id/textView_Test1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subtitle"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginTop="25dp"
+        android:text="Test 1:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editText_ScoreTest1"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_Test1"
+        android:layout_alignBottom="@+id/textView_Test1"
+        android:layout_toRightOf="@+id/textView_Test1"
+        android:layout_alignRight="@+id/editText_Score_Homework"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+       
+        <requestFocus />
+        
+    <TextView
+        android:id="@+id/textView_Test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_Test1"
+        android:layout_below="@+id/editText_ScoreTest1"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Test 2:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    <EditText
+        android:id="@+id/editText_Score_Test2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_Test2"
+        android:layout_alignBottom="@+id/textView_Test2"
+        android:layout_toRightOf="@+id/textView_Test2"
+        android:layout_alignRight="@+id/editText_Score_Homework"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView_Test3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_Test2"
+        android:layout_below="@+id/textView_Test2"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Test 3:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <EditText
+        android:id="@+id/editText_Score_Test3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_Test3"
+        android:layout_alignBottom="@+id/textView_Test3"        
+        android:layout_toRightOf="@+id/textView_Test3"
+        android:layout_alignRight="@+id/editText_Score_Homework"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView_Homework"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_Test3"
+        android:layout_below="@+id/textView_Test3"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Homework:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <EditText
+        android:id="@+id/editText_Score_Homework"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_Homework"
+        android:layout_alignBottom="@+id/textView_Homework"        
+        android:layout_toRightOf="@+id/textView_Homework"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    
+    <TextView
+        android:id="@+id/textView_Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_Homework"
+        android:layout_below="@+id/textView_Homework"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Grade:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <EditText
+        android:id="@+id/editText_Score_Grade"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_Grade"
+        android:layout_alignBottom="@+id/textView_Grade"
+        android:layout_alignRight="@+id/editText_Score_Homework"
+        android:layout_toRightOf="@+id/textView_Grade"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@+string/FinaleGrade" />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_Score_Grade"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_alignRight="@+id/editText_Score_Homework"
+        android:text="Calculate" />
+    
+    <TextView
+        android:id="@+id/textView_TestFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_Test1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Final Test:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView_TestFinalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText_Score_Homework"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+</RelativeLayout>
